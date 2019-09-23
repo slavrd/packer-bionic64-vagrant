@@ -1,0 +1,5 @@
+---
+name: default
+title: Bionic64 base box test
+summary: Test suite for basic check of Bionic64 installation
+version: 0.1.0
