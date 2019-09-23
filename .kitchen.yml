@@ -1,0 +1,21 @@
+  
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: shell
+
+platforms:
+  - name: ubuntu-1804
+    driver:
+      box: ubuntu-1804-virtualbox-test
+      box_url: file:///<%= ENV['PWD'] %>/box/virtualbox/package.box
+      provider: virtualbox
+
+verifier:
+  name: inspec
+  sudo: false
+
+suites:
+  - name: default
